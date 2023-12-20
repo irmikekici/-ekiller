@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#define PI 3.14
+
+void hesapla (float yaricap)
+{
+	if(yaricap>0){
+		printf("Alan = %f\n",pow(yaricap,2)*PI);
+		printf("Cevre = %f\n",2*PI*yaricap);
+	}
+	else if(yaricap==0)
+	{
+		printf("Alan ve cevre 0 dir\n");
+	}
+	else
+	{
+		printf("Lutfen gecerli bir deger giriniz\n");
+	}
+}
+int main()
+{
+	float a;
+	printf("Lutfen yaricap degerini giriniz:\n");
+	scanf("%f",&a);
+	hesapla(a);
+	return 0;
+}
